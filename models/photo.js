@@ -9,7 +9,7 @@ photo_id: {
 
 */
 
-var photos_url = process.env.PHOTOS_URL || "http://localhost:8000"
+var photos_url = process.env.PHOTOS_URL || "http://photos.cdpsgram.es";
 
 exports.photos = {
 	1: {

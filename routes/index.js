@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var multer  = require('multer');
 
-var photos_dir = process.env.PHOTOS_DIR || './media/';
+var photos_dir = process.env.PHOTOS_DIR || '/mnt/nas/';
 
 var photoController = require('../controllers/photo_controller');
 
