@@ -9,6 +9,7 @@ photo_id: {
 
 */
 
+/*
 var photos_url = process.env.PHOTOS_URL || "http://photos.cdpsgram.es";
 
 exports.photos = {
@@ -33,3 +34,14 @@ exports.photos = {
 		url: photos_url + '/photos/photo5.jpg'
 	}
 };
+
+*/
+
+var mongoose = require('mongoose');
+
+var photoSchema = mongoose.Schema({
+	name: String,
+	url: String
+});
+
+module.exports = mongoose.model('Fotos', photoSchema);

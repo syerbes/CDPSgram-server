@@ -1,11 +1,11 @@
 <%
-var photos_url = process.env.PHOTOS_URL || "http://photos.cdpsgram.es";
+var photos_url = process.env.PHOTOS_URL || "http://www.photos.cdpsgram.es";
 %>
 <div class="photo photo_playing">
 	<p><%=photo.name%></p>
 	<img src="<%=photo.url%>"></img>
 	
-	<form method="post" action="/photos/<%=photo.id%>?_method=delete">
+	<form method="post" action="/photos/<%=photo.name%>?_method=delete">
 	    <button onClick="return confirm('Delete: <%=photo.name%>. Are you sure? ');">
 	      Delete photo
 	    </button>
